@@ -51,7 +51,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
           {/* Desktop Navigation Links */}
           <nav
             aria-label="Main Navigation"
-            className="hidden lg:flex items-center gap-7 xl:gap-8"
+            className="hidden lg:flex items-center gap-5 xl:gap-8"
           >
             {/* ABOUT DROPDOWN */}
             <div

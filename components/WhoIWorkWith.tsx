@@ -59,7 +59,7 @@ export default function WhoIWorkWith() {
         </div>
 
         {/* 3-Column Editorial Card Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-7 lg:gap-9">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-5 lg:gap-8 xl:gap-9">
           {specialties.map((item, index) => (
             <motion.div
               key={item.number}
@@ -88,9 +88,9 @@ export default function WhoIWorkWith() {
               </div>
 
               {/* Card Content */}
-              <div className="p-6 sm:p-7 flex flex-col flex-1 justify-between">
+              <div className="p-6 md:p-5 lg:p-7 flex flex-col flex-1 justify-between">
                 <div>
-                  <h3 className="font-serif text-xl sm:text-2xl text-[#252824] mb-3 group-hover:text-[#43574D] transition-colors leading-snug">
+                  <h3 className="font-serif text-xl md:text-lg lg:text-2xl text-[#252824] mb-3 group-hover:text-[#43574D] transition-colors leading-snug">
                     {item.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-[#4A4F48] leading-relaxed">

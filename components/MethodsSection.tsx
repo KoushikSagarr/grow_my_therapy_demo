@@ -105,7 +105,7 @@ export default function MethodsSection() {
                 <div className="lg:col-span-2 pt-2 lg:pt-0 flex lg:justify-end">
                   <Link
                     href="/#contact"
-                    className="inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.12em] uppercase text-[#43574D] group-hover:text-[#252824] transition-colors"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.12em] uppercase text-[#43574D] group-hover:text-[#252824] transition-colors py-2"
                   >
                     <span>Inquire</span>
                     <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
