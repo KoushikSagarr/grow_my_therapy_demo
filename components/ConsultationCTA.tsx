@@ -1,0 +1,86 @@
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { ArrowRight, Calendar } from "lucide-react";
+
+interface ConsultationCTAProps {
+  onOpenConsultation: () => void;
+}
+
+export default function ConsultationCTA({
+  onOpenConsultation,
+}: ConsultationCTAProps) {
+  return (
+    <section id="contact" className="py-20 md:py-28 lg:py-36 bg-[#E8E8DF] border-t border-[#DDD8CE]/80">
+      <div className="container-editorial">
+        <div className="bg-[#FAF8F5] rounded-3xl border border-[#DDD8CE] overflow-hidden shadow-xl">
+          <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
+            {/* Left Content Column */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="lg:col-span-7 p-8 sm:p-12 md:p-16 lg:p-20 flex flex-col justify-center"
+            >
+              <div className="flex items-center gap-2 mb-4">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#43574D]" />
+                <span className="text-[10.5px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D]">
+                  Schedule a Consultation
+                </span>
+              </div>
+
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-[1.18] tracking-tight mb-6">
+                Find support that feels like the{" "}
+                <span className="italic font-normal text-[#43574D]">
+                  right fit.
+                </span>
+              </h2>
+
+              <p className="text-sm sm:text-base text-[#4A4F48] leading-relaxed mb-8 max-w-xl">
+                Starting therapy can feel like a big step. You don&apos;t need to have everything figured out before reaching out. A consultation is an opportunity to talk about what you&apos;re experiencing, ask questions, and see whether working together feels right.
+              </p>
+
+              <div className="flex flex-wrap items-center gap-4">
+                <button
+                  type="button"
+                  onClick={onOpenConsultation}
+                  className="editorial-btn-solid text-xs sm:text-sm py-4 px-8 shadow-md hover:shadow-lg cursor-pointer flex items-center gap-2"
+                >
+                  <Calendar className="w-4 h-4" />
+                  <span>Schedule a Consultation</span>
+                </button>
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-[#E8E8DF] text-xs text-[#686E66]">
+                Santa Monica Office · California Telehealth · Confidential
+              </div>
+            </motion.div>
+
+            {/* Right Image Column: Dr. Maya Reynolds Portrait or Office */}
+            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[380px] bg-[#E8E8DF]">
+              <Image
+                src="/maya/portrait.jpg"
+                alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist in Santa Monica"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover object-top filter contrast-[1.02]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute bottom-6 left-6 right-6 text-white text-xs drop-shadow-md">
+                <span className="font-serif text-base block font-medium">
+                  Dr. Maya Reynolds, PsyD
+                </span>
+                <span className="text-[11px] tracking-wider uppercase opacity-90">
+                  Licensed Clinical Psychologist
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

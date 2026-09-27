@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #F7F4EE;
+    --bg-secondary: #E8E8DF;
+    --bg-warm: #EFECE4;
+    --bg-surface: #FFFFFF;
+    
+    --text-primary: #252824;
+    --text-secondary: #4A4F48;
+    --text-muted: #686E66;
+    
+    --accent-deep: #43574D;
+    --accent-sage: #A9B7A8;
+    --accent-warm: #B88972;
+    --accent-light-sage: #DEE4DC;
+    
+    --border-subtle: #DDD8CE;
+    --border-dark: #C6C1B6;
+    --border-accent: #A9B7A8;
+
+    --font-serif-name: "DM Serif Display", Georgia, serif;
+    --font-sans-name: "Manrope", system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans-name);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::selection {
+    background-color: var(--accent-sage);
+    color: #1A1F1B;
+  }
+}
+
+/* Custom Typography Helpers */
+.font-serif {
+  font-family: var(--font-serif-name);
+}
+
+.font-sans {
+  font-family: var(--font-sans-name);
+}
+
+/* Editorial Italic Accent */
+.editorial-italic {
+  font-family: var(--font-serif-name);
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Container widths matching reference site Squarespace architecture */
+.container-editorial {
+  width: 100%;
+  max-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 5vw, 4.5rem);
+  padding-right: clamp(1.25rem, 5vw, 4.5rem);
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 5vw, 4rem);
+  padding-right: clamp(1.25rem, 5vw, 4rem);
+}
+
+/* Custom Interactive Links & Buttons from Reference Site */
+.editorial-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-sans-name);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--text-primary);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.editorial-link:hover {
+  opacity: 0.75;
+  transform: translateX(2px);
+}
+
+.editorial-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans-name);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+  border-radius: 9999px;
+  padding: 0.65rem 1.75rem;
+  background-color: transparent;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.editorial-btn-outline:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.editorial-btn-solid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans-name);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: var(--accent-deep);
+  border: 1px solid var(--accent-deep);
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.editorial-btn-solid:hover {
+  background-color: #34443B;
+  border-color: #34443B;
+  transform: translateY(-1px);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
