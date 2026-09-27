@@ -228,7 +228,7 @@ export default function ConsultationModal({
                       Request Consultation
                     </button>
                     <p className="text-[10px] text-center text-[#686E66] mt-2">
-                      Confidential communication. Responses typically within 1–2 business days.
+                      Confidential communication.
                     </p>
                   </div>
                 </form>

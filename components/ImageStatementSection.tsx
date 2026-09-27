@@ -6,20 +6,20 @@ import { motion } from "framer-motion";
 
 export default function ImageStatementSection() {
   return (
-    <section className="py-20 md:py-28 lg:py-36 bg-[#F7F4EE] border-b border-[#DDD8CE]/60">
+    <section className="py-16 md:py-24 lg:py-28 bg-[#F7F4EE] border-b border-[#DDD8CE]/60">
       <div className="container-editorial">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Column: Large Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          {/* Left Column: Large Office Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-6 relative aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden shadow-xl border border-[#DDD8CE]"
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-6 relative aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden shadow-lg border border-[#DDD8CE]"
           >
             <Image
               src="/maya/office-1-full.jpg"
-              alt="Sunlit loft interior with brick walls and warm therapy seating in Santa Monica"
+              alt="Sunlit Santa Monica therapy loft with brick walls and serene seating"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover object-center hover:scale-102 transition-transform duration-700 ease-out"
@@ -28,13 +28,13 @@ export default function ImageStatementSection() {
 
           {/* Right Column: Minimal Reflective Statement */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: 15 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-6 flex flex-col justify-center lg:pl-6"
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.65, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-6 flex flex-col justify-center lg:pl-4"
           >
-            <span className="text-[10px] sm:text-[11px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-4 block">
+            <span className="text-[10px] sm:text-[11px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
               Perspective &amp; Growth
             </span>
 
@@ -45,8 +45,8 @@ export default function ImageStatementSection() {
               </span>
             </h2>
 
-            <p className="mt-6 text-sm sm:text-base text-[#4A4F48] leading-relaxed max-w-lg">
-              We honor the coping strategies that carried you through difficult seasons, while creating room to let down your guard and build lasting stability.
+            <p className="mt-5 text-sm sm:text-base text-[#4A4F48] leading-relaxed max-w-lg">
+              We look at the experiences and patterns that shaped you, while creating room to let down your guard and develop more sustainable ways of living.
             </p>
           </motion.div>
         </div>

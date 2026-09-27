@@ -252,7 +252,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
 
             {/* FAQS */}
             <Link
-              href="#faqs"
+              href="/faqs"
               className="text-[11px] xl:text-[12px] font-medium tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors"
             >
               FAQs

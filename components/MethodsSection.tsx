@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 interface MethodItem {
   number: string;
@@ -15,42 +15,42 @@ interface MethodItem {
 const methods: MethodItem[] = [
   {
     number: "01",
-    name: "CBT",
-    fullName: "Cognitive Behavioral Therapy",
+    name: "Cognitive Behavioral Therapy (CBT)",
+    fullName: "Cognitive Restructuring & Behavioral Awareness",
     description:
-      "Practical tools for understanding thought patterns, changing unhelpful cycles, and developing more sustainable ways of responding to life's demands.",
+      "Practical tools for understanding thought patterns, changing unhelpful cycles, and developing more sustainable ways of responding.",
   },
   {
     number: "02",
-    name: "EMDR",
+    name: "EMDR Therapy",
     fullName: "Eye Movement Desensitization & Reprocessing",
     description:
-      "A carefully paced approach to processing difficult or traumatic experiences while prioritizing emotional safety and stabilization.",
+      "A carefully paced approach to processing difficult or traumatic experiences while prioritizing safety and stabilization.",
   },
   {
     number: "03",
     name: "Mindfulness-Based Practices",
     fullName: "Present-Moment Awareness",
     description:
-      "Practices that help cultivate greater awareness of thoughts, emotions, sensations, and patterns without becoming overwhelmed by them.",
+      "Practices that can help create greater awareness of thoughts, emotions, sensations, and patterns without becoming overwhelmed by them.",
   },
   {
     number: "04",
     name: "Body-Oriented Techniques",
-    fullName: "Somatic & Nervous System Regulation",
+    fullName: "Somatic & Physiological Regulation",
     description:
-      "Approaches that consider the physiological side of emotional experience and support greater physical ease and regulation.",
+      "Approaches that consider the physiological side of emotional experience and support greater awareness and regulation.",
   },
 ];
 
 export default function MethodsSection() {
   return (
-    <section id="methods" className="py-20 md:py-28 lg:py-36 bg-[#F7F4EE]">
+    <section id="methods" className="py-16 md:py-24 lg:py-28 bg-[#F7F4EE] border-b border-[#DDD8CE]/60">
       <div className="container-editorial">
         {/* Header */}
-        <div className="max-w-2xl mb-14 md:mb-20">
+        <div className="max-w-2xl mb-12 md:mb-16">
           <span className="text-[10.5px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
-            Clinical Modalities
+            Clinical Approaches
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-tight">
             My approach{" "}
@@ -59,52 +59,58 @@ export default function MethodsSection() {
             </span>
           </h2>
           <p className="mt-4 text-sm sm:text-base text-[#4A4F48] leading-relaxed">
-            I draw from proven, evidence-based methodologies that integrate both mental cognition and nervous system regulation to support meaningful, long-term change.
+            I integrate evidence-based methods tailored to your individual needs, bridging practical cognitive tools with deeper reflective and somatic work.
           </p>
         </div>
 
-        {/* 2x2 / 4-Item List Grid matching reference */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        {/* Editorial Numbered List with Dividers */}
+        <div className="border-t border-[#DDD8CE]">
           {methods.map((method, index) => (
             <motion.div
               key={method.number}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
+              viewport={{ once: true, margin: "-40px" }}
               transition={{
-                duration: 0.6,
-                delay: index * 0.1,
+                duration: 0.5,
+                delay: index * 0.08,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="p-8 sm:p-10 rounded-2xl bg-[#FAF8F5] border border-[#DDD8CE] shadow-xs hover:border-[#A9B7A8] transition-all flex flex-col justify-between group"
+              className="group py-8 sm:py-10 border-b border-[#DDD8CE] transition-colors hover:border-[#43574D]/60"
             >
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-xs font-semibold text-[#43574D] bg-[#E8E8DF] px-2.5 py-1 rounded-md">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-baseline">
+                {/* Number & Name (5 cols) */}
+                <div className="lg:col-span-5 flex items-baseline gap-4 sm:gap-6">
+                  <span className="font-mono text-xs sm:text-sm font-semibold text-[#8A8F87] group-hover:text-[#43574D] transition-colors shrink-0">
                     {method.number}
                   </span>
-                  <span className="text-[11px] font-medium tracking-[0.14em] uppercase text-[#686E66]">
-                    {method.fullName}
-                  </span>
+                  <div>
+                    <h3 className="font-serif text-2xl sm:text-3xl text-[#252824] group-hover:text-[#43574D] transition-colors leading-snug">
+                      {method.name}
+                    </h3>
+                    <span className="text-[10.5px] font-sans uppercase tracking-[0.14em] text-[#8A8F87] mt-1 block">
+                      {method.fullName}
+                    </span>
+                  </div>
                 </div>
 
-                <h3 className="font-serif text-2xl sm:text-3xl text-[#252824] mb-3 group-hover:text-[#43574D] transition-colors">
-                  {method.name}
-                </h3>
+                {/* Description (5 cols) */}
+                <div className="lg:col-span-5 pt-2 lg:pt-0">
+                  <p className="text-sm text-[#4A4F48] leading-relaxed">
+                    {method.description}
+                  </p>
+                </div>
 
-                <p className="text-sm text-[#4A4F48] leading-relaxed">
-                  {method.description}
-                </p>
-              </div>
-
-              <div className="pt-6 mt-6 border-t border-[#E8E8DF]">
-                <Link
-                  href="#contact"
-                  className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.14em] uppercase text-[#43574D] hover:text-[#252824] transition-colors"
-                >
-                  <span>Inquire About This Modality</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                {/* Subtle Action Link (2 cols) */}
+                <div className="lg:col-span-2 pt-2 lg:pt-0 flex lg:justify-end">
+                  <Link
+                    href="#contact"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.12em] uppercase text-[#43574D] group-hover:text-[#252824] transition-colors"
+                  >
+                    <span>Inquire</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}

@@ -13,7 +13,6 @@ import ApproachSection from "@/components/ApproachSection";
 import ImageStatementSection from "@/components/ImageStatementSection";
 import MethodsSection from "@/components/MethodsSection";
 import OfficeSection from "@/components/OfficeSection";
-import FaqSection from "@/components/FaqSection";
 import ConsultationCTA from "@/components/ConsultationCTA";
 import ClosingStatement from "@/components/ClosingStatement";
 import Footer from "@/components/Footer";
@@ -51,7 +50,7 @@ export default function Home() {
         {/* 6. Who I Work With 3-Column Card Architecture */}
         <WhoIWorkWith />
 
-        {/* 7. Emotional Statement Banner */}
+        {/* 7. Emotional Statement Banner (Softened Office Background) */}
         <StatementSection onOpenConsultation={handleOpenConsultation} />
 
         {/* 8. Areas of Expertise Editorial Keyword List */}
@@ -63,23 +62,20 @@ export default function Home() {
         {/* 10. Image + Statement Section */}
         <ImageStatementSection />
 
-        {/* 11. Methods / Approach Specialties */}
+        {/* 11. Methods / Approach Specialties (Editorial Numbered List) */}
         <MethodsSection />
 
         {/* 12. Office Section (Santa Monica Loft & Telehealth) */}
         <OfficeSection />
 
-        {/* 13. Frequently Asked Questions */}
-        <FaqSection />
-
-        {/* 14. Large Consultation CTA Section */}
+        {/* 13. Large Consultation CTA Section */}
         <ConsultationCTA onOpenConsultation={handleOpenConsultation} />
 
-        {/* 15. Welcoming Closing Statement */}
+        {/* 14. Welcoming Closing Statement */}
         <ClosingStatement />
       </main>
 
-      {/* 16. Multi-Column Footer with Verbatim Address */}
+      {/* 15. Multi-Column Footer with Verbatim Address */}
       <Footer />
 
       {/* Interactive Consultation Dialog */}

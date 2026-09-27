@@ -146,7 +146,7 @@ export default function MobileMenu({
 
                       {/* FAQS */}
                       <Link
-                        href="#faqs"
+                        href="/faqs"
                         onClick={handleLinkClick}
                         className="block py-2 font-sans text-sm tracking-[0.14em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
                       >
