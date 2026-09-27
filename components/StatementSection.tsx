@@ -16,13 +16,13 @@ export default function StatementSection({
       {/* Background Image: Softened, Darkened Maya Office Interior */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/maya/statement-office.jpg"
-          alt="Quiet, softened view of Dr. Maya Reynolds' Santa Monica therapy space"
+          src="/maya/statement-bg.jpg"
+          alt="Quiet dusk ocean view reflecting calm and grounding"
           fill
           sizes="100vw"
-          className="object-cover object-center filter brightness-[0.7] contrast-[1.05]"
+          className="object-cover object-center filter brightness-[0.72] contrast-[1.05]"
         />
-        <div className="absolute inset-0 bg-[#1A1F1B]/55 backdrop-blur-[0.5px]" />
+        <div className="absolute inset-0 bg-black/45 backdrop-blur-[0.5px]" />
       </div>
 
       {/* Centered Content */}

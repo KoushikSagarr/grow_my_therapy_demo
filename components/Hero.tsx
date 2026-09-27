@@ -85,12 +85,12 @@ export default function Hero({ onOpenConsultation }: HeroProps) {
               {/* Secondary Back Image: Dr. Maya Reynolds Santa Monica Office Loft */}
               <div className="absolute top-0 right-0 w-[72%] sm:w-[70%] h-[78%] rounded-2xl overflow-hidden shadow-lg border border-[#DDD8CE]">
                 <Image
-                  src="/maya/hero-office.jpg"
-                  alt="Dr. Maya Reynolds' Santa Monica therapy office with natural window light and high ceilings"
+                  src="/maya/hero-coastal.jpg"
+                  alt="Santa Monica morning coastal bluffs and calming ocean light"
                   fill
                   priority
                   sizes="(max-width: 768px) 70vw, 35vw"
-                  className="object-cover object-center filter contrast-[1.02] hover:scale-102 transition-transform duration-700 ease-out"
+                  className="object-cover object-center filter saturate-[0.92] contrast-[1.02] hover:scale-102 transition-transform duration-700 ease-out"
                 />
               </div>
 

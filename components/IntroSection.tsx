@@ -61,16 +61,16 @@ export default function IntroSection() {
             className="lg:col-span-5 relative w-full aspect-[3/4] sm:aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border border-[#DDD8CE]"
           >
             <Image
-              src="/maya/intro-office.jpg"
-              alt="Comfortable, naturally lit seating area in Dr. Maya Reynolds' Santa Monica office"
+              src="/maya/coastal-shoreline.jpg"
+              alt="Gentle Pacific shoreline wash near Santa Monica, evoking a calm and reflective state"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-cover object-center filter contrast-[1.02] hover:scale-102 transition-transform duration-700 ease-out"
+              className="object-cover object-center filter saturate-[0.95] contrast-[1.02] hover:scale-102 transition-transform duration-700 ease-out"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
             <div className="absolute bottom-4 left-4 right-4 text-center sm:text-left">
               <span className="text-[10px] font-medium tracking-[0.16em] uppercase text-white/90 drop-shadow-xs">
-                A quiet space to slow down
+                A space to breathe &amp; reconnect
               </span>
             </div>
           </motion.div>

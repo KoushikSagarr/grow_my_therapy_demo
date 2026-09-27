@@ -18,24 +18,24 @@ const specialties: SpecialtyCard[] = [
   {
     number: "01",
     title: "Anxiety & Overwhelm",
-    image: "/maya/who-work-1.jpg",
-    alt: "Comfortable leather armchair and natural wool throw in Dr. Maya Reynolds' Santa Monica office",
+    image: "/maya/who-anxiety.jpg",
+    alt: "Adult taking a deep breath in calm contemplation, navigating anxiety relief",
     description:
       "Support for adults experiencing persistent worry, panic, overthinking, emotional overwhelm, tension, or difficulty feeling at ease.",
   },
   {
     number: "02",
     title: "High Achievers & Perfectionists",
-    image: "/maya/who-work-2.jpg",
-    alt: "Potted olive tree and sunlit couch corner in peaceful therapy space",
+    image: "/maya/who-achievers.jpg",
+    alt: "Professional in thoughtful reflection in a peaceful setting",
     description:
       "For professionals, entrepreneurs, and creatives who are used to pushing through—but are finding that constant pressure is no longer sustainable.",
   },
   {
     number: "03",
     title: "Trauma & Life Experiences",
-    image: "/maya/who-work-3.jpg",
-    alt: "Tall sunlit arched window and grounded seating corner in Santa Monica brick loft",
+    image: "/maya/who-trauma.jpg",
+    alt: "Person walking along serene coastal path, symbolizing healing and grounding",
     description:
       "Support for people working through single-incident trauma or longer-standing patterns shaped by childhood, relationships, or chronic stress.",
   },
