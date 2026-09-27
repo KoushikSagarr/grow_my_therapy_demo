@@ -51,7 +51,7 @@ export default function FaqsPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F7F4EE] text-[#252824]">
+    <div className="min-h-screen flex flex-col bg-[#F7F4EE] text-[#252824] overflow-x-hidden">
       <AnnouncementBar />
       <Navbar onOpenConsultation={() => setIsConsultationOpen(true)} />
 
@@ -112,6 +112,8 @@ export default function FaqsPage() {
                   >
                     <button
                       type="button"
+                      id={`faq-btn-${index}`}
+                      aria-controls={`faq-answer-${index}`}
                       onClick={() => toggle(index)}
                       aria-expanded={isOpen}
                       className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 cursor-pointer focus:outline-hidden focus-visible:ring-2 focus-visible:ring-[#43574D]"
@@ -131,6 +133,9 @@ export default function FaqsPage() {
                     <AnimatePresence initial={false}>
                       {isOpen && (
                         <motion.div
+                          id={`faq-answer-${index}`}
+                          role="region"
+                          aria-labelledby={`faq-btn-${index}`}
                           initial={{ height: 0, opacity: 0 }}
                           animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}

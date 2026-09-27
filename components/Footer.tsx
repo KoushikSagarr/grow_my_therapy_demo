@@ -27,22 +27,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-xs text-[#E8E8DF]">
               <li>
-                <Link href="#intro" className="hover:text-white transition-colors">
+                <Link href="/#intro" className="hover:text-white transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#approach" className="hover:text-white transition-colors">
+                <Link href="/#approach" className="hover:text-white transition-colors">
                   Approach
                 </Link>
               </li>
               <li>
-                <Link href="#specialties" className="hover:text-white transition-colors">
+                <Link href="/#specialties" className="hover:text-white transition-colors">
                   Specialties
                 </Link>
               </li>
               <li>
-                <Link href="#methods" className="hover:text-white transition-colors">
+                <Link href="/#methods" className="hover:text-white transition-colors">
                   Methods
                 </Link>
               </li>
@@ -52,7 +52,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-white transition-colors">
+                <Link href="/#contact" className="hover:text-white transition-colors">
                   Contact
                 </Link>
               </li>
@@ -66,32 +66,32 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-xs text-[#E8E8DF]">
               <li>
-                <Link href="#specialties" className="hover:text-white transition-colors">
+                <Link href="/#specialties" className="hover:text-white transition-colors">
                   Anxiety &amp; Worry
                 </Link>
               </li>
               <li>
-                <Link href="#specialties" className="hover:text-white transition-colors">
+                <Link href="/#specialties" className="hover:text-white transition-colors">
                   Trauma &amp; Life Events
                 </Link>
               </li>
               <li>
-                <Link href="#specialties" className="hover:text-white transition-colors">
+                <Link href="/#specialties" className="hover:text-white transition-colors">
                   Burnout &amp; Exhaustion
                 </Link>
               </li>
               <li>
-                <Link href="#specialties" className="hover:text-white transition-colors">
+                <Link href="/#specialties" className="hover:text-white transition-colors">
                   Perfectionism
                 </Link>
               </li>
               <li>
-                <Link href="#specialties" className="hover:text-white transition-colors">
+                <Link href="/#specialties" className="hover:text-white transition-colors">
                   Panic &amp; Physical Tension
                 </Link>
               </li>
               <li>
-                <Link href="#specialties" className="hover:text-white transition-colors">
+                <Link href="/#specialties" className="hover:text-white transition-colors">
                   Chronic Stress
                 </Link>
               </li>

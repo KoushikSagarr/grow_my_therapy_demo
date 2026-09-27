@@ -77,7 +77,7 @@ export default function ApproachSection() {
             {/* CTA */}
             <div>
               <Link
-                href="#methods"
+                href="/#methods"
                 className="editorial-btn-solid text-xs sm:text-sm py-3.5 px-7"
               >
                 Learn More About My Approach

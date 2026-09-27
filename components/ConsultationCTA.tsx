@@ -23,7 +23,7 @@ export default function ConsultationCTA({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-              className="lg:col-span-7 p-8 sm:p-12 md:p-14 lg:p-16 flex flex-col justify-center"
+              className="lg:col-span-7 p-6 sm:p-10 md:p-12 lg:p-16 flex flex-col justify-center"
             >
               <div className="flex items-center gap-2 mb-3.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#43574D]" />
@@ -32,22 +32,22 @@ export default function ConsultationCTA({
                 </span>
               </div>
 
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-[1.18] tracking-tight mb-5">
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#252824] leading-[1.18] tracking-tight mb-4 sm:mb-5">
                 Find support that feels like the{" "}
                 <span className="italic font-normal text-[#43574D]">
                   right fit.
                 </span>
               </h2>
 
-              <p className="text-sm sm:text-base text-[#4A4F48] leading-relaxed mb-7 max-w-xl">
+              <p className="text-xs sm:text-sm md:text-base text-[#4A4F48] leading-relaxed mb-6 sm:mb-7 max-w-xl">
                 Starting therapy can feel like a big step. You don&apos;t need to have everything figured out before reaching out. A consultation is an opportunity to talk about what you&apos;re experiencing, ask questions, and see whether working together feels right.
               </p>
 
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                 <button
                   type="button"
                   onClick={onOpenConsultation}
-                  className="editorial-btn-solid text-xs sm:text-sm py-3.5 px-7 shadow-md hover:shadow-lg cursor-pointer flex items-center gap-2"
+                  className="editorial-btn-solid text-xs sm:text-sm py-3.5 px-7 shadow-md hover:shadow-lg cursor-pointer flex items-center justify-center gap-2 w-full sm:w-auto"
                 >
                   <Calendar className="w-4 h-4" />
                   <span>Schedule a Consultation</span>
@@ -60,13 +60,13 @@ export default function ConsultationCTA({
             </motion.div>
 
             {/* Right Image Column: Dr. Maya Reynolds Portrait */}
-            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[360px] bg-[#E8E8DF]">
+            <div className="lg:col-span-5 relative aspect-[3/4] sm:aspect-[4/5] lg:aspect-auto min-h-[380px] sm:min-h-[460px] lg:h-full lg:min-h-[520px] bg-[#E8E8DF]">
               <Image
                 src="/maya/portrait.jpg"
                 alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist in Santa Monica"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-cover object-top filter contrast-[1.02]"
+                className="object-cover object-[center_14%] filter contrast-[1.02]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-5 left-5 right-5 text-white text-xs drop-shadow-md">

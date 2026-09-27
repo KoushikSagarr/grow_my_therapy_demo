@@ -14,6 +14,7 @@ export default function ConsultationModal({
   onClose,
 }: ConsultationModalProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [format, setFormat] = useState<"in-person" | "telehealth">("in-person");
   const [formData, setFormData] = useState({
     name: "",
@@ -36,12 +37,26 @@ export default function ConsultationModal({
     } else {
       document.body.style.overflow = "";
       setSubmitted(false);
+      setIsSubmitting(false);
+      setFormData({
+        name: "",
+        email: "",
+        focus: "anxiety",
+        message: "",
+      });
     }
   }, [isOpen, onClose]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    if (!formData.name.trim() || !formData.email.trim()) {
+      return;
+    }
+    setIsSubmitting(true);
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitted(true);
+    }, 450);
   };
 
   return (
@@ -223,9 +238,10 @@ export default function ConsultationModal({
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="w-full editorial-btn-solid text-center justify-center py-3"
+                      disabled={isSubmitting}
+                      className="w-full editorial-btn-solid text-center justify-center py-3 disabled:opacity-60 cursor-pointer disabled:cursor-not-allowed"
                     >
-                      Request Consultation
+                      {isSubmitting ? "Sending Request..." : "Request Consultation"}
                     </button>
                     <p className="text-[10px] text-center text-[#686E66] mt-2">
                       Confidential communication.

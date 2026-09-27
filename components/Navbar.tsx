@@ -37,7 +37,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
         <div className="container-editorial flex items-center justify-between">
           {/* Brand Logo / Monogram */}
           <Link
-            href="#"
+            href="/"
             className="group flex flex-col focus:outline-hidden focus-visible:ring-2 focus-visible:ring-[#43574D] rounded-sm"
           >
             <span className="font-serif text-xl sm:text-2xl tracking-[0.04em] text-[#252824] group-hover:text-[#43574D] transition-colors leading-tight">
@@ -83,14 +83,14 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                   >
                     <div className="bg-[#FAF8F5] border border-[#DDD8CE] rounded-lg shadow-lg p-2.5 space-y-1">
                       <Link
-                        href="#intro"
+                        href="/#intro"
                         onClick={() => setAboutOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
                         About Dr. Reynolds
                       </Link>
                       <Link
-                        href="#office"
+                        href="/#office"
                         onClick={() => setAboutOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
@@ -104,7 +104,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
 
             {/* APPROACH */}
             <Link
-              href="#approach"
+              href="/#approach"
               className="text-[11px] xl:text-[12px] font-medium tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors"
             >
               Approach
@@ -140,42 +140,42 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                   >
                     <div className="bg-[#FAF8F5] border border-[#DDD8CE] rounded-lg shadow-lg p-2.5 space-y-1">
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={() => setSpecialtiesOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
                         Anxiety &amp; Worry
                       </Link>
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={() => setSpecialtiesOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
                         Trauma &amp; Life Events
                       </Link>
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={() => setSpecialtiesOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
                         Burnout &amp; Exhaustion
                       </Link>
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={() => setSpecialtiesOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
                         Perfectionism &amp; Pressure
                       </Link>
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={() => setSpecialtiesOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
                         Panic &amp; Physical Tension
                       </Link>
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={() => setSpecialtiesOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
@@ -217,28 +217,28 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                   >
                     <div className="bg-[#FAF8F5] border border-[#DDD8CE] rounded-lg shadow-lg p-2.5 space-y-1">
                       <Link
-                        href="#methods"
+                        href="/#methods"
                         onClick={() => setMethodsOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
                         Cognitive Behavioral Therapy (CBT)
                       </Link>
                       <Link
-                        href="#methods"
+                        href="/#methods"
                         onClick={() => setMethodsOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
                         EMDR Therapy
                       </Link>
                       <Link
-                        href="#methods"
+                        href="/#methods"
                         onClick={() => setMethodsOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
                         Mindfulness-Based Practices
                       </Link>
                       <Link
-                        href="#methods"
+                        href="/#methods"
                         onClick={() => setMethodsOpen(false)}
                         className="block px-3 py-2 text-xs font-sans text-[#252824] hover:bg-[#EFECE4] rounded-md transition-colors"
                       >
@@ -260,7 +260,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
 
             {/* CONTACT */}
             <Link
-              href="#contact"
+              href="/#contact"
               className="text-[11px] xl:text-[12px] font-medium tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors"
             >
               Contact

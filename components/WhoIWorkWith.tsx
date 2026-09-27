@@ -100,7 +100,7 @@ export default function WhoIWorkWith() {
 
                 <div className="pt-5 mt-5 border-t border-[#E8E8DF]">
                   <Link
-                    href="#contact"
+                    href="/#contact"
                     className="inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.14em] uppercase text-[#43574D] hover:text-[#252824] transition-colors"
                   >
                     <span>Learn More</span>

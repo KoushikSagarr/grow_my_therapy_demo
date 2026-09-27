@@ -104,7 +104,7 @@ export default function MethodsSection() {
                 {/* Subtle Action Link (2 cols) */}
                 <div className="lg:col-span-2 pt-2 lg:pt-0 flex lg:justify-end">
                   <Link
-                    href="#contact"
+                    href="/#contact"
                     className="inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.12em] uppercase text-[#43574D] group-hover:text-[#252824] transition-colors"
                   >
                     <span>Inquire</span>

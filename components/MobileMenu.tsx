@@ -117,7 +117,7 @@ export default function MobileMenu({
 
                       {/* APPROACH */}
                       <Link
-                        href="#approach"
+                        href="/#approach"
                         onClick={handleLinkClick}
                         className="block py-2 font-sans text-sm tracking-[0.14em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
                       >
@@ -155,7 +155,7 @@ export default function MobileMenu({
 
                       {/* CONTACT */}
                       <Link
-                        href="#contact"
+                        href="/#contact"
                         onClick={handleLinkClick}
                         className="block py-2 font-sans text-sm tracking-[0.14em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
                       >
@@ -199,14 +199,14 @@ export default function MobileMenu({
                     </div>
                     <div className="space-y-3 pt-2">
                       <Link
-                        href="#intro"
+                        href="/#intro"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
                         About Dr. Reynolds
                       </Link>
                       <Link
-                        href="#office"
+                        href="/#office"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
@@ -239,42 +239,42 @@ export default function MobileMenu({
                     </div>
                     <div className="space-y-3 pt-2">
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
                         Anxiety &amp; Worry
                       </Link>
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
                         Trauma &amp; Life Experiences
                       </Link>
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
                         Burnout &amp; Exhaustion
                       </Link>
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
                         Perfectionism &amp; Pressure
                       </Link>
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
                         Panic &amp; Physical Tension
                       </Link>
                       <Link
-                        href="#specialties"
+                        href="/#specialties"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
@@ -307,28 +307,28 @@ export default function MobileMenu({
                     </div>
                     <div className="space-y-3 pt-2">
                       <Link
-                        href="#methods"
+                        href="/#methods"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
                         Cognitive Behavioral Therapy (CBT)
                       </Link>
                       <Link
-                        href="#methods"
+                        href="/#methods"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
                         EMDR Therapy
                       </Link>
                       <Link
-                        href="#methods"
+                        href="/#methods"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
                         Mindfulness-Based Practices
                       </Link>
                       <Link
-                        href="#methods"
+                        href="/#methods"
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >

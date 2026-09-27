@@ -51,7 +51,7 @@ export default function AlternatingSection() {
               Clients frequently come to me feeling &ldquo;functional&rdquo; on the outside while quietly struggling with constant worry, tension in their body, difficulty sleeping, or a sense that they&apos;re always bracing for something to go wrong.
             </p>
             <div>
-              <Link href="#specialties" className="editorial-link">
+              <Link href="/#specialties" className="editorial-link">
                 <span>View Focus Areas</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
@@ -84,7 +84,7 @@ export default function AlternatingSection() {
               Understanding both the emotional and physiological sides of your experience creates space for something different, helping you develop insight, resilience, and a stronger relationship with yourself over time.
             </p>
             <div>
-              <Link href="#methods" className="editorial-link">
+              <Link href="/#methods" className="editorial-link">
                 <span>Explore Clinical Methods</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
