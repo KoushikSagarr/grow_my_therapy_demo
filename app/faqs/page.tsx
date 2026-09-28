@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Minus, ArrowLeft, Calendar } from "lucide-react";
+import { Plus, Minus, ArrowLeft } from "lucide-react";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";

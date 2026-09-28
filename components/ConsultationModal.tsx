@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, CheckCircle2, Calendar, MapPin, Video } from "lucide-react";
+import { X, CheckCircle2, MapPin, Video } from "lucide-react";
 
 interface ConsultationModalProps {
   isOpen: boolean;
@@ -23,19 +23,9 @@ export default function ConsultationModal({
     message: "",
   });
 
+  // Reset form state when the modal closes
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-      const handleKeyDown = (e: KeyboardEvent) => {
-        if (e.key === "Escape") onClose();
-      };
-      window.addEventListener("keydown", handleKeyDown);
-      return () => {
-        document.body.style.overflow = "";
-        window.removeEventListener("keydown", handleKeyDown);
-      };
-    } else {
-      document.body.style.overflow = "";
+    if (!isOpen) {
       setSubmitted(false);
       setIsSubmitting(false);
       setFormData({
@@ -45,6 +35,23 @@ export default function ConsultationModal({
         message: "",
       });
     }
+  }, [isOpen]);
+
+  // Lock body scroll and handle Escape key while modal is open
+  useEffect(() => {
+    if (!isOpen) {
+      document.body.style.overflow = "";
+      return;
+    }
+    document.body.style.overflow = "hidden";
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, [isOpen, onClose]);
 
   const handleSubmit = (e: React.FormEvent) => {

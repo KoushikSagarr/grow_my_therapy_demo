@@ -20,28 +20,34 @@ export default function MobileMenu({
 }: MobileMenuProps) {
   const [currentLevel, setCurrentLevel] = useState<MenuLevel>("root");
 
-  // Lock body scroll when open and handle Escape key
+  // Reset drawer level when menu closes
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-      const handleKeyDown = (e: KeyboardEvent) => {
-        if (e.key === "Escape") {
-          if (currentLevel !== "root") {
-            setCurrentLevel("root");
-          } else {
-            onClose();
-          }
-        }
-      };
-      window.addEventListener("keydown", handleKeyDown);
-      return () => {
-        document.body.style.overflow = "";
-        window.removeEventListener("keydown", handleKeyDown);
-      };
-    } else {
-      document.body.style.overflow = "";
+    if (!isOpen) {
       setCurrentLevel("root");
     }
+  }, [isOpen]);
+
+  // Lock body scroll when open and handle Escape key
+  useEffect(() => {
+    if (!isOpen) {
+      document.body.style.overflow = "";
+      return;
+    }
+    document.body.style.overflow = "hidden";
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        if (currentLevel !== "root") {
+          setCurrentLevel("root");
+        } else {
+          onClose();
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, [isOpen, currentLevel, onClose]);
 
   const handleLinkClick = () => {

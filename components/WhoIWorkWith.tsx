@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
@@ -98,19 +99,13 @@ export default function WhoIWorkWith() {
                 </div>
 
                 <div className="pt-5 mt-5 border-t border-[#E8E8DF]">
-                  <a
+                  <Link
                     href="/#contact"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById("contact")
-                        ?.scrollIntoView({ behavior: "smooth" });
-                    }}
                     className="inline-flex items-center gap-1.5 text-[11px] font-medium tracking-[0.16em] uppercase text-[#43574D] hover:text-[#252824] transition-colors"
                   >
                     <span>Learn More</span>
                     <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </motion.div>

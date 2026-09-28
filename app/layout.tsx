@@ -36,6 +36,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Dr. Maya Reynolds, PsyD" }],
   creator: "Dr. Maya Reynolds, PsyD",
+  alternates: {
+    canonical: "https://growmytherapydemo.vercel.app/",
+  },
   openGraph: {
     title: "Dr. Maya Reynolds, PsyD | Anxiety & Trauma Therapist in Santa Monica",
     description:
@@ -63,16 +66,24 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Physician",
+  "@type": "MedicalBusiness",
   "name": "Dr. Maya Reynolds, PsyD",
+  "url": "https://growmytherapydemo.vercel.app/",
   "jobTitle": "Licensed Clinical Psychologist",
   "description":
     "Dr. Maya Reynolds offers warm, collaborative therapy for adults navigating anxiety, trauma, burnout, perfectionism, and chronic stress.",
+  "image": "https://growmytherapydemo.vercel.app/maya/portrait.jpg",
+  "telephone": "+1-310-000-0000",
+  "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "123th Street 45 W",
@@ -80,6 +91,11 @@ const jsonLd = {
     "addressRegion": "CA",
     "postalCode": "90401",
     "addressCountry": "US",
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "34.0195",
+    "longitude": "-118.4912",
   },
   "areaServed": [
     {
@@ -95,6 +111,9 @@ const jsonLd = {
     "Clinical Psychology",
     "Cognitive Behavioral Therapy",
     "EMDR",
+  ],
+  "sameAs": [
+    "https://growmytherapydemo.vercel.app/",
   ],
 };
 
