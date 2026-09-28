@@ -18,8 +18,8 @@ export default function ImageStatementSection() {
             className="lg:col-span-6 relative aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden shadow-lg border border-[#DDD8CE]"
           >
             <Image
-              src="/maya/office-1-full.jpg"
-              alt="Sunlit Santa Monica therapy loft with brick walls and serene seating"
+              src="/maya/intro-office.jpg"
+              alt="Thoughtfully designed Santa Monica office space featuring comfortable seating, books, and serene decor"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover object-center hover:scale-102 transition-transform duration-700 ease-out"

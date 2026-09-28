@@ -206,7 +206,7 @@ export default function ConsultationModal({
                       className="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-white border border-[#DDD8CE] rounded-lg focus:outline-hidden focus:border-[#43574D] focus:ring-1 focus:ring-[#43574D] text-[#252824] transition-all"
                     >
                       <option value="anxiety">Anxiety &amp; Worry</option>
-                      <option value="trauma">Trauma &amp; Life Experiences</option>
+                      <option value="trauma">Trauma &amp; Life Events</option>
                       <option value="burnout">Burnout &amp; Exhaustion</option>
                       <option value="perfectionism">Perfectionism &amp; Pressure</option>
                       <option value="panic">Panic &amp; Physical Tension</option>

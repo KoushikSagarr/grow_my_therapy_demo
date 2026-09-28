@@ -250,7 +250,7 @@ export default function MobileMenu({
                         onClick={handleLinkClick}
                         className="block py-2 text-sm text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]"
                       >
-                        Trauma &amp; Life Experiences
+                        Trauma &amp; Life Events
                       </Link>
                       <Link
                         href="/#specialties"

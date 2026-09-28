@@ -130,7 +130,7 @@ export default function OfficeSection() {
               </p>
               <div className="flex items-center gap-1.5 text-xs text-[#43574D] font-medium">
                 <ShieldCheck className="w-3.5 h-3.5" />
-                <span>Confidential, secure video care</span>
+                <span>Secure video sessions</span>
               </div>
             </div>
           </div>

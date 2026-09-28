@@ -82,7 +82,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/#specialties" className="hover:text-white transition-colors">
-                  Perfectionism
+                  Perfectionism &amp; Pressure
                 </Link>
               </li>
               <li>
@@ -92,7 +92,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/#specialties" className="hover:text-white transition-colors">
-                  Chronic Stress
+                  Chronic Stress &amp; Regulation
                 </Link>
               </li>
             </ul>

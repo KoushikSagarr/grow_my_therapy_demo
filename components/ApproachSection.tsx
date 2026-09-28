@@ -94,8 +94,8 @@ export default function ApproachSection() {
             className="lg:col-span-5 relative w-full aspect-[3/4] sm:aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border border-[#DDD8CE]"
           >
             <Image
-              src="/maya/office-3.jpg"
-              alt="Natural light and calm conversation seating in Dr. Maya Reynolds' Santa Monica office"
+              src="/maya/hero-office.jpg"
+              alt="Sunlight streaming through tall brick windows onto comfortable seating in Dr. Maya Reynolds' Santa Monica practice"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"
               className="object-cover object-center hover:scale-102 transition-transform duration-700 ease-out"
