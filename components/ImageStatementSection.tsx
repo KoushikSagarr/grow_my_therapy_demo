@@ -34,11 +34,11 @@ export default function ImageStatementSection() {
             transition={{ duration: 0.65, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-6 flex flex-col justify-center lg:pl-4"
           >
-            <span className="text-[10px] sm:text-[11px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
+            <span className="text-[10px] sm:text-[11px] font-sans font-medium tracking-[0.22em] uppercase text-[#43574D] mb-3 block">
               Perspective &amp; Growth
             </span>
 
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-[#252824] leading-[1.2] tracking-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-[#252824] leading-[1.2] font-normal tracking-normal">
               Understanding where you&apos;ve been can help shape{" "}
               <span className="italic font-normal text-[#43574D]">
                 where you&apos;re headed.

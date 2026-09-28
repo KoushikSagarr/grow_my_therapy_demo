@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, Manrope } from "next/font/google";
+import { Cormorant_Infant, Manrope } from "next/font/google";
 import "./globals.css";
 
-const dmSerifDisplay = DM_Serif_Display({
+const cormorantInfant = Cormorant_Infant({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
   variable: "--font-serif",
   display: "swap",
@@ -106,11 +106,11 @@ export default function RootLayout({
   return (
     <html
       lang="en-US"
-      className={`${dmSerifDisplay.variable} ${manrope.variable}`}
+      className={`${cormorantInfant.variable} ${manrope.variable}`}
       style={
         {
-          "--font-serif-name": "var(--font-serif)",
-          "--font-sans-name": "var(--font-sans)",
+          "--font-serif-name": "var(--font-serif), 'Cormorant Infant', Georgia, serif",
+          "--font-sans-name": "var(--font-sans), 'Manrope', system-ui, sans-serif",
         } as React.CSSProperties
       }
     >

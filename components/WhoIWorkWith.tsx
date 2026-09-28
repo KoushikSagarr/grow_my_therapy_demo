@@ -46,10 +46,10 @@ export default function WhoIWorkWith() {
       <div className="container-editorial">
         {/* Section Header */}
         <div className="max-w-2xl mb-12 md:mb-16">
-          <span className="text-[10.5px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
+          <span className="text-[10.5px] font-sans font-medium tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
             Specialized Care
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-tight font-normal tracking-normal">
             Who I work with
           </h2>
           <p className="mt-4 text-sm sm:text-base text-[#4A4F48] leading-relaxed">
@@ -81,7 +81,7 @@ export default function WhoIWorkWith() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover object-center group-hover:scale-103 transition-transform duration-700 ease-out"
                 />
-                <div className="absolute top-3 left-3 bg-[#FAF8F5]/92 backdrop-blur-xs px-2.5 py-0.5 rounded-md border border-[#DDD8CE]/80 text-[10px] font-mono font-semibold text-[#43574D]">
+                <div className="absolute top-3 left-3 bg-[#FAF8F5]/92 backdrop-blur-xs px-2.5 py-0.5 rounded-md border border-[#DDD8CE]/80 text-[10px] font-mono font-medium text-[#43574D]">
                   {item.number}
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function WhoIWorkWith() {
               {/* Card Content */}
               <div className="p-6 md:p-5 lg:p-7 flex flex-col flex-1 justify-between">
                 <div>
-                  <h3 className="font-serif text-xl md:text-lg lg:text-2xl text-[#252824] mb-3 group-hover:text-[#43574D] transition-colors leading-snug">
+                  <h3 className="font-serif text-xl md:text-lg lg:text-2xl text-[#252824] mb-3 group-hover:text-[#43574D] transition-colors leading-snug font-normal tracking-normal">
                     {item.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-[#4A4F48] leading-relaxed">
@@ -106,7 +106,7 @@ export default function WhoIWorkWith() {
                         .getElementById("contact")
                         ?.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.14em] uppercase text-[#43574D] hover:text-[#252824] transition-colors"
+                    className="inline-flex items-center gap-1.5 text-[11px] font-medium tracking-[0.16em] uppercase text-[#43574D] hover:text-[#252824] transition-colors"
                   >
                     <span>Learn More</span>
                     <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

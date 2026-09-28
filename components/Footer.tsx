@@ -9,10 +9,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 pb-12 border-b border-[#3D423C]">
           {/* Column 1: Brand & Credentials (4 cols on lg) */}
           <div className="lg:col-span-4 space-y-2.5">
-            <h3 className="font-serif text-2xl tracking-[0.03em] text-[#F7F4EE]">
+            <h3 className="font-serif text-2xl tracking-[0.03em] font-normal text-[#F7F4EE]">
               Dr. Maya Reynolds, PsyD
             </h3>
-            <p className="text-xs uppercase tracking-[0.16em] text-[#A9B7A8] font-medium">
+            <p className="text-xs uppercase tracking-[0.18em] text-[#A9B7A8] font-normal">
               Licensed Clinical Psychologist
             </p>
             <p className="text-xs text-[#C6C1B6] leading-relaxed pt-1.5 max-w-sm">
@@ -22,7 +22,7 @@ export default function Footer() {
 
           {/* Column 2: Navigate (2 cols on lg) */}
           <div className="lg:col-span-2 space-y-3.5">
-            <h4 className="text-[11px] font-sans font-semibold tracking-[0.18em] uppercase text-[#A9B7A8]">
+            <h4 className="text-[11px] font-sans font-medium tracking-[0.2em] uppercase text-[#A9B7A8]">
               Navigate
             </h4>
             <ul className="space-y-2.5 text-xs text-[#E8E8DF]">
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* Column 3: Focus Areas (3 cols on lg) */}
           <div className="lg:col-span-3 space-y-3.5">
-            <h4 className="text-[11px] font-sans font-semibold tracking-[0.18em] uppercase text-[#A9B7A8]">
+            <h4 className="text-[11px] font-sans font-medium tracking-[0.2em] uppercase text-[#A9B7A8]">
               Focus Areas
             </h4>
             <ul className="space-y-2.5 text-xs text-[#E8E8DF]">
@@ -100,7 +100,7 @@ export default function Footer() {
 
           {/* Column 4: Contact & Verbatim Address (3 cols on lg) */}
           <div className="lg:col-span-3 space-y-3.5">
-            <h4 className="text-[11px] font-sans font-semibold tracking-[0.18em] uppercase text-[#A9B7A8]">
+            <h4 className="text-[11px] font-sans font-medium tracking-[0.2em] uppercase text-[#A9B7A8]">
               Contact &amp; Location
             </h4>
             <div className="text-xs text-[#E8E8DF] space-y-1 leading-relaxed">

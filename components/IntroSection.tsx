@@ -18,12 +18,12 @@ export default function IntroSection() {
             className="lg:col-span-7 flex flex-col justify-center"
           >
             {/* Section Eyebrow */}
-            <span className="text-[10.5px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
+            <span className="text-[10.5px] font-sans font-medium tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
               Grounded, Depth-Oriented Care
             </span>
 
             {/* Editorial Headline */}
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-[1.2] tracking-tight mb-8 md:mb-10">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-[1.2] font-normal tracking-normal mb-8 md:mb-10">
               You can be doing well on the outside and still feel{" "}
               <span className="italic font-normal text-[#43574D]">
                 exhausted inside.
@@ -33,7 +33,7 @@ export default function IntroSection() {
             {/* Two-Column Editorial Text Layout */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-7 text-[#4A4F48] leading-relaxed text-sm md:text-[15px]">
               <div>
-                <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-[#252824] mb-2.5">
+                <p className="text-[11px] font-medium tracking-[0.16em] uppercase text-[#252824] mb-2.5">
                   Understanding What Lies Beneath
                 </p>
                 <p>
@@ -42,7 +42,7 @@ export default function IntroSection() {
               </div>
 
               <div>
-                <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-[#252824] mb-2.5">
+                <p className="text-[11px] font-medium tracking-[0.16em] uppercase text-[#252824] mb-2.5">
                   Slowing The Cycle Down
                 </p>
                 <p>
@@ -69,7 +69,7 @@ export default function IntroSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
             <div className="absolute bottom-4 left-4 right-4 text-center sm:text-left">
-              <span className="text-[10px] font-medium tracking-[0.16em] uppercase text-white/90 drop-shadow-xs">
+              <span className="text-[10px] font-normal tracking-[0.18em] uppercase text-white/90 drop-shadow-xs">
                 A space to breathe &amp; reconnect
               </span>
             </div>

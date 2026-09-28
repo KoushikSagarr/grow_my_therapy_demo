@@ -20,12 +20,12 @@ export default function ApproachSection() {
             className="lg:col-span-7 flex flex-col justify-center"
           >
             {/* Eyebrow */}
-            <span className="text-[10.5px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
+            <span className="text-[10.5px] font-sans font-medium tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
               How I Work
             </span>
 
             {/* Headline */}
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-[1.2] tracking-tight mb-7">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-[1.2] font-normal tracking-normal mb-7">
               Therapy should feel collaborative, not like something being{" "}
               <span className="italic font-normal text-[#43574D]">
                 done to you.
@@ -47,7 +47,7 @@ export default function ApproachSection() {
             </div>
 
             {/* Highlights */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-xs text-[#252824] font-medium">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-xs text-[#252824] font-normal">
               <div className="flex items-center gap-2">
                 <span className="w-5 h-5 rounded-full bg-[#DEE4DC] flex items-center justify-center text-[#43574D] shrink-0">
                   <Check className="w-3 h-3" />

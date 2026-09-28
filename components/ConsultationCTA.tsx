@@ -27,12 +27,12 @@ export default function ConsultationCTA({
             >
               <div className="flex items-center gap-2 mb-3.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#43574D]" />
-                <span className="text-[10.5px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D]">
+                <span className="text-[10.5px] font-sans font-medium tracking-[0.2em] uppercase text-[#43574D]">
                   Schedule a Consultation
                 </span>
               </div>
 
-              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#252824] leading-[1.18] tracking-tight mb-4 sm:mb-5">
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#252824] leading-[1.18] font-normal tracking-normal mb-4 sm:mb-5">
                 Find support that feels like the{" "}
                 <span className="italic font-normal text-[#43574D]">
                   right fit.
@@ -70,7 +70,7 @@ export default function ConsultationCTA({
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-5 left-5 right-5 text-white text-xs drop-shadow-md">
-                <span className="font-serif text-base block font-medium">
+                <span className="font-serif text-base block font-normal">
                   Dr. Maya Reynolds, PsyD
                 </span>
                 <span className="text-[11px] tracking-wider uppercase opacity-90">

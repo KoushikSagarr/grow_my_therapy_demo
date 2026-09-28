@@ -40,10 +40,10 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             href="/"
             className="group flex flex-col focus:outline-hidden focus-visible:ring-2 focus-visible:ring-[#43574D] rounded-sm"
           >
-            <span className="font-serif text-xl sm:text-2xl tracking-[0.04em] text-[#252824] group-hover:text-[#43574D] transition-colors leading-tight">
+            <span className="font-serif text-xl sm:text-2xl tracking-[0.04em] font-normal text-[#252824] group-hover:text-[#43574D] transition-colors leading-tight">
               Dr. Maya Reynolds
             </span>
-            <span className="text-[10px] sm:text-[11px] font-sans font-medium tracking-[0.16em] uppercase text-[#686E66] -mt-0.5">
+            <span className="text-[9.5px] sm:text-[10.5px] font-sans font-normal tracking-[0.2em] uppercase text-[#686E66] -mt-0.5">
               PsyD · Clinical Psychologist
             </span>
           </Link>
@@ -61,7 +61,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             >
               <button
                 type="button"
-                className="flex items-center gap-1 text-[11px] xl:text-[12px] font-medium tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors cursor-pointer"
+                className="flex items-center gap-1 text-[11px] xl:text-[12px] font-normal tracking-[0.18em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors cursor-pointer"
                 aria-expanded={aboutOpen}
               >
                 <span>About</span>
@@ -105,7 +105,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             {/* APPROACH */}
             <Link
               href="/#approach"
-              className="text-[11px] xl:text-[12px] font-medium tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors"
+              className="text-[11px] xl:text-[12px] font-normal tracking-[0.18em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors"
             >
               Approach
             </Link>
@@ -118,7 +118,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             >
               <button
                 type="button"
-                className="flex items-center gap-1 text-[11px] xl:text-[12px] font-medium tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors cursor-pointer"
+                className="flex items-center gap-1 text-[11px] xl:text-[12px] font-normal tracking-[0.18em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors cursor-pointer"
                 aria-expanded={specialtiesOpen}
               >
                 <span>Specialties</span>
@@ -195,7 +195,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             >
               <button
                 type="button"
-                className="flex items-center gap-1 text-[11px] xl:text-[12px] font-medium tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors cursor-pointer"
+                className="flex items-center gap-1 text-[11px] xl:text-[12px] font-normal tracking-[0.18em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors cursor-pointer"
                 aria-expanded={methodsOpen}
               >
                 <span>Methods</span>
@@ -253,7 +253,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             {/* FAQS */}
             <Link
               href="/faqs"
-              className="text-[11px] xl:text-[12px] font-medium tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors"
+              className="text-[11px] xl:text-[12px] font-normal tracking-[0.18em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors"
             >
               FAQs
             </Link>
@@ -261,7 +261,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             {/* CONTACT */}
             <Link
               href="/#contact"
-              className="text-[11px] xl:text-[12px] font-medium tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors"
+              className="text-[11px] xl:text-[12px] font-normal tracking-[0.18em] uppercase text-[#252824] hover:text-[#43574D] py-1 transition-colors"
             >
               Contact
             </Link>
@@ -281,7 +281,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             <button
               type="button"
               onClick={onOpenConsultation}
-              className="hidden sm:inline-flex text-[10px] font-semibold tracking-[0.12em] uppercase px-3.5 py-1.5 rounded-full border border-[#252824] text-[#252824] hover:bg-[#252824] hover:text-white transition-colors"
+              className="hidden sm:inline-flex text-[10px] font-medium tracking-[0.14em] uppercase px-3.5 py-1.5 rounded-full border border-[#252824] text-[#252824] hover:bg-[#252824] hover:text-white transition-colors"
             >
               Consultation
             </button>

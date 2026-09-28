@@ -74,10 +74,10 @@ export default function MobileMenu({
             {/* Drawer Header */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-[#E8E8DF]">
               <div className="flex flex-col">
-                <span className="font-serif text-lg text-[#252824]">
+                <span className="font-serif text-lg font-normal text-[#252824]">
                   Dr. Maya Reynolds
                 </span>
-                <span className="text-[10px] uppercase font-sans tracking-[0.16em] text-[#686E66]">
+                <span className="text-[10px] uppercase font-sans tracking-[0.2em] font-normal text-[#686E66]">
                   Santa Monica, CA
                 </span>
               </div>
@@ -109,7 +109,7 @@ export default function MobileMenu({
                       <button
                         type="button"
                         onClick={() => setCurrentLevel("about")}
-                        className="w-full flex items-center justify-between py-2 text-left font-sans text-sm tracking-[0.14em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
+                        className="w-full flex items-center justify-between py-2 text-left font-sans text-sm font-normal tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
                       >
                         <span>About</span>
                         <ChevronRight className="w-4 h-4 text-[#8A8F87]" />
@@ -119,7 +119,7 @@ export default function MobileMenu({
                       <Link
                         href="/#approach"
                         onClick={handleLinkClick}
-                        className="block py-2 font-sans text-sm tracking-[0.14em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
+                        className="block py-2 font-sans text-sm font-normal tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
                       >
                         Approach
                       </Link>
@@ -128,7 +128,7 @@ export default function MobileMenu({
                       <button
                         type="button"
                         onClick={() => setCurrentLevel("specialties")}
-                        className="w-full flex items-center justify-between py-2 text-left font-sans text-sm tracking-[0.14em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
+                        className="w-full flex items-center justify-between py-2 text-left font-sans text-sm font-normal tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
                       >
                         <span>Specialties</span>
                         <ChevronRight className="w-4 h-4 text-[#8A8F87]" />
@@ -138,7 +138,7 @@ export default function MobileMenu({
                       <button
                         type="button"
                         onClick={() => setCurrentLevel("methods")}
-                        className="w-full flex items-center justify-between py-2 text-left font-sans text-sm tracking-[0.14em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
+                        className="w-full flex items-center justify-between py-2 text-left font-sans text-sm font-normal tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
                       >
                         <span>Methods</span>
                         <ChevronRight className="w-4 h-4 text-[#8A8F87]" />
@@ -148,7 +148,7 @@ export default function MobileMenu({
                       <Link
                         href="/faqs"
                         onClick={handleLinkClick}
-                        className="block py-2 font-sans text-sm tracking-[0.14em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
+                        className="block py-2 font-sans text-sm font-normal tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
                       >
                         FAQs
                       </Link>
@@ -157,7 +157,7 @@ export default function MobileMenu({
                       <Link
                         href="/#contact"
                         onClick={handleLinkClick}
-                        className="block py-2 font-sans text-sm tracking-[0.14em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
+                        className="block py-2 font-sans text-sm font-normal tracking-[0.16em] uppercase text-[#252824] hover:text-[#43574D] border-b border-[#E8E8DF]/60 transition-colors"
                       >
                         Contact
                       </Link>
@@ -189,13 +189,13 @@ export default function MobileMenu({
                     <button
                       type="button"
                       onClick={() => setCurrentLevel("root")}
-                      className="flex items-center gap-2 py-2 text-xs font-semibold tracking-[0.14em] uppercase text-[#43574D] hover:underline"
+                      className="flex items-center gap-2 py-2 text-xs font-medium tracking-[0.16em] uppercase text-[#43574D] hover:underline"
                     >
                       <ArrowLeft className="w-4 h-4" />
                       <span>Back to Menu</span>
                     </button>
                     <div className="pt-2 pb-1 border-b border-[#DDD8CE]">
-                      <h3 className="font-serif text-xl text-[#252824]">About</h3>
+                      <h3 className="font-serif text-xl font-normal tracking-normal text-[#252824]">About</h3>
                     </div>
                     <div className="space-y-3 pt-2">
                       <Link
@@ -229,13 +229,13 @@ export default function MobileMenu({
                     <button
                       type="button"
                       onClick={() => setCurrentLevel("root")}
-                      className="flex items-center gap-2 py-2 text-xs font-semibold tracking-[0.14em] uppercase text-[#43574D] hover:underline"
+                      className="flex items-center gap-2 py-2 text-xs font-medium tracking-[0.16em] uppercase text-[#43574D] hover:underline"
                     >
                       <ArrowLeft className="w-4 h-4" />
                       <span>Back to Menu</span>
                     </button>
                     <div className="pt-2 pb-1 border-b border-[#DDD8CE]">
-                      <h3 className="font-serif text-xl text-[#252824]">Specialties</h3>
+                      <h3 className="font-serif text-xl font-normal tracking-normal text-[#252824]">Specialties</h3>
                     </div>
                     <div className="space-y-3 pt-2">
                       <Link
@@ -297,13 +297,13 @@ export default function MobileMenu({
                     <button
                       type="button"
                       onClick={() => setCurrentLevel("root")}
-                      className="flex items-center gap-2 py-2 text-xs font-semibold tracking-[0.14em] uppercase text-[#43574D] hover:underline"
+                      className="flex items-center gap-2 py-2 text-xs font-medium tracking-[0.16em] uppercase text-[#43574D] hover:underline"
                     >
                       <ArrowLeft className="w-4 h-4" />
                       <span>Back to Menu</span>
                     </button>
                     <div className="pt-2 pb-1 border-b border-[#DDD8CE]">
-                      <h3 className="font-serif text-xl text-[#252824]">Clinical Methods</h3>
+                      <h3 className="font-serif text-xl font-normal tracking-normal text-[#252824]">Clinical Methods</h3>
                     </div>
                     <div className="space-y-3 pt-2">
                       <Link

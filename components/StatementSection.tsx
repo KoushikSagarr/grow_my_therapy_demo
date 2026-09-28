@@ -34,11 +34,11 @@ export default function StatementSection({
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-3xl mx-auto space-y-5"
         >
-          <span className="text-[10px] sm:text-[11px] font-sans font-semibold tracking-[0.22em] uppercase text-[#DEE4DC]">
+          <span className="text-[10px] sm:text-[11px] font-sans font-medium tracking-[0.24em] uppercase text-[#DEE4DC]">
             A Safe Space
           </span>
 
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#F7F4EE] leading-[1.18] font-normal tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#F7F4EE] leading-[1.18] font-normal tracking-normal">
             You don&apos;t have to understand everything before you{" "}
             <span className="italic font-normal text-[#E8E8DF]">
               ask for support.
@@ -53,7 +53,7 @@ export default function StatementSection({
             <button
               type="button"
               onClick={onOpenConsultation}
-              className="inline-flex items-center justify-center font-sans text-xs sm:text-sm font-semibold tracking-[0.16em] uppercase text-[#252824] bg-[#F7F4EE] hover:bg-white rounded-full px-8 py-3.5 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
+              className="inline-flex items-center justify-center font-sans text-xs sm:text-sm font-medium tracking-[0.16em] uppercase text-[#252824] bg-[#F7F4EE] hover:bg-white rounded-full px-8 py-3.5 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
             >
               Reach Out Today
             </button>

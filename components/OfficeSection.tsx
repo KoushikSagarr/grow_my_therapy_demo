@@ -11,10 +11,10 @@ export default function OfficeSection() {
       <div className="container-editorial">
         {/* Header */}
         <div className="max-w-2xl mb-12 md:mb-14">
-          <span className="text-[10.5px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
+          <span className="text-[10.5px] font-sans font-medium tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
             The Space
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-tight mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-tight font-normal tracking-normal mb-4">
             A quiet space to{" "}
             <span className="italic font-normal text-[#43574D]">
               slow down.
@@ -92,18 +92,18 @@ export default function OfficeSection() {
             </div>
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <span className="text-[10px] font-mono font-semibold uppercase tracking-[0.16em] text-[#43574D] bg-[#E8E8DF] px-2 py-0.5 rounded">
+                <span className="text-[10px] font-mono font-medium uppercase tracking-[0.16em] text-[#43574D] bg-[#E8E8DF] px-2 py-0.5 rounded">
                   In-Person
                 </span>
                 <span className="text-xs text-[#686E66]">Santa Monica</span>
               </div>
-              <h3 className="font-serif text-xl sm:text-2xl text-[#252824] mb-1.5">
+              <h3 className="font-serif text-xl sm:text-2xl text-[#252824] mb-1.5 font-normal tracking-normal">
                 Santa Monica Office
               </h3>
               <p className="text-xs sm:text-sm text-[#4A4F48] leading-relaxed mb-3">
                 Located at 123th Street 45 W, Santa Monica, CA 90401. A quiet, private space with natural light and a comfortable, uncluttered environment.
               </p>
-              <div className="flex items-center gap-1.5 text-xs text-[#43574D] font-medium">
+              <div className="flex items-center gap-1.5 text-xs text-[#43574D]">
                 <SunMedium className="w-3.5 h-3.5" />
                 <span>Naturally lit, comfortable setting</span>
               </div>
@@ -117,18 +117,18 @@ export default function OfficeSection() {
             </div>
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <span className="text-[10px] font-mono font-semibold uppercase tracking-[0.16em] text-[#43574D] bg-[#E8E8DF] px-2 py-0.5 rounded">
+                <span className="text-[10px] font-mono font-medium uppercase tracking-[0.16em] text-[#43574D] bg-[#E8E8DF] px-2 py-0.5 rounded">
                   Virtual
                 </span>
                 <span className="text-xs text-[#686E66]">California</span>
               </div>
-              <h3 className="font-serif text-xl sm:text-2xl text-[#252824] mb-1.5">
+              <h3 className="font-serif text-xl sm:text-2xl text-[#252824] mb-1.5 font-normal tracking-normal">
                 Secure Telehealth
               </h3>
               <p className="text-xs sm:text-sm text-[#4A4F48] leading-relaxed mb-3">
                 Secure telehealth sessions available for clients located in California, offering flexible and confidential care.
               </p>
-              <div className="flex items-center gap-1.5 text-xs text-[#43574D] font-medium">
+              <div className="flex items-center gap-1.5 text-xs text-[#43574D]">
                 <ShieldCheck className="w-3.5 h-3.5" />
                 <span>Secure video sessions</span>
               </div>

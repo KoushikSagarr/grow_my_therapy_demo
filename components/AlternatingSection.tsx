@@ -35,10 +35,10 @@ export default function AlternatingSection() {
             transition={{ duration: 0.55, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-6 flex flex-col justify-center"
           >
-            <span className="text-[10.5px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-3">
+            <span className="text-[10.5px] font-sans font-medium tracking-[0.2em] uppercase text-[#43574D] mb-3">
               Practice Philosophy
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#252824] leading-snug mb-5">
+            <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#252824] leading-snug font-normal tracking-normal mb-5">
               Therapy is not about becoming{" "}
               <span className="italic font-normal text-[#43574D]">
                 someone else.
@@ -68,10 +68,10 @@ export default function AlternatingSection() {
             transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-center"
           >
-            <span className="text-[10.5px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-3">
+            <span className="text-[10.5px] font-sans font-medium tracking-[0.2em] uppercase text-[#43574D] mb-3">
               Mind &amp; Body Integration
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#252824] leading-snug mb-5">
+            <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#252824] leading-snug font-normal tracking-normal mb-5">
               Understanding both the emotional and physiological{" "}
               <span className="italic font-normal text-[#43574D]">
                 sides of your experience.

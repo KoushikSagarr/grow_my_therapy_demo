@@ -61,7 +61,7 @@ export default function FaqsPage() {
           <div className="mb-8">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.14em] uppercase text-[#43574D] hover:underline"
+              className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.16em] uppercase text-[#43574D] hover:underline"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to Home</span>
@@ -71,10 +71,10 @@ export default function FaqsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             {/* Left Header */}
             <div className="lg:col-span-5">
-              <span className="text-[10.5px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
+              <span className="text-[10.5px] font-sans font-medium tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
                 Common Questions
               </span>
-              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-tight mb-5">
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-normal text-[#252824] leading-tight mb-5">
                 Frequently asked{" "}
                 <span className="italic font-normal text-[#43574D]">
                   questions
@@ -85,7 +85,7 @@ export default function FaqsPage() {
               </p>
 
               <div className="p-6 rounded-2xl bg-[#FAF8F5] border border-[#DDD8CE] max-w-sm space-y-3">
-                <h3 className="font-serif text-lg text-[#252824]">
+                <h3 className="font-serif text-lg font-normal tracking-normal text-[#252824]">
                   Have a specific question?
                 </h3>
                 <p className="text-xs text-[#4A4F48] leading-relaxed">
@@ -118,7 +118,7 @@ export default function FaqsPage() {
                       aria-expanded={isOpen}
                       className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 cursor-pointer focus:outline-hidden focus-visible:ring-2 focus-visible:ring-[#43574D]"
                     >
-                      <span className="font-serif text-lg sm:text-xl text-[#252824] leading-snug">
+                      <span className="font-serif text-lg sm:text-xl font-normal tracking-normal text-[#252824] leading-snug">
                         {faq.question}
                       </span>
                       <span className="shrink-0 w-8 h-8 rounded-full bg-[#E8E8DF] flex items-center justify-center text-[#43574D] transition-transform">

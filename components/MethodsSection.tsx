@@ -49,10 +49,10 @@ export default function MethodsSection() {
       <div className="container-editorial">
         {/* Header */}
         <div className="max-w-2xl mb-12 md:mb-16">
-          <span className="text-[10.5px] font-sans font-semibold tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
+          <span className="text-[10.5px] font-sans font-medium tracking-[0.2em] uppercase text-[#43574D] mb-3 block">
             Clinical Approaches
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#252824] leading-tight font-normal tracking-normal">
             My approach{" "}
             <span className="italic font-normal text-[#43574D]">
               includes…
@@ -81,14 +81,14 @@ export default function MethodsSection() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-baseline">
                 {/* Number & Name (5 cols) */}
                 <div className="lg:col-span-5 flex items-baseline gap-4 sm:gap-6">
-                  <span className="font-mono text-xs sm:text-sm font-semibold text-[#8A8F87] group-hover:text-[#43574D] transition-colors shrink-0">
+                  <span className="font-mono text-xs sm:text-sm font-medium text-[#8A8F87] group-hover:text-[#43574D] transition-colors shrink-0">
                     {method.number}
                   </span>
                   <div>
-                    <h3 className="font-serif text-2xl sm:text-3xl text-[#252824] group-hover:text-[#43574D] transition-colors leading-snug">
+                    <h3 className="font-serif text-2xl sm:text-3xl text-[#252824] group-hover:text-[#43574D] transition-colors leading-snug font-normal tracking-normal">
                       {method.name}
                     </h3>
-                    <span className="text-[10.5px] font-sans uppercase tracking-[0.14em] text-[#8A8F87] mt-1 block">
+                    <span className="text-[10.5px] font-sans uppercase tracking-[0.16em] text-[#8A8F87] mt-1 block">
                       {method.fullName}
                     </span>
                   </div>
@@ -105,7 +105,7 @@ export default function MethodsSection() {
                 <div className="lg:col-span-2 pt-2 lg:pt-0 flex lg:justify-end">
                   <Link
                     href="/#contact"
-                    className="inline-flex items-center gap-1 text-[11px] font-semibold tracking-[0.12em] uppercase text-[#43574D] group-hover:text-[#252824] transition-colors py-2"
+                    className="inline-flex items-center gap-1 text-[11px] font-medium tracking-[0.16em] uppercase text-[#43574D] group-hover:text-[#252824] transition-colors py-2"
                   >
                     <span>Inquire</span>
                     <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

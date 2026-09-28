@@ -25,13 +25,13 @@ export default function Hero({ onOpenConsultation }: HeroProps) {
             {/* Eyebrow */}
             <div className="flex items-center gap-2 mb-4 md:mb-5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#43574D]" aria-hidden="true" />
-              <span className="text-[10.5px] sm:text-[11.5px] font-sans font-semibold tracking-[0.18em] uppercase text-[#43574D]">
+              <span className="text-[10.5px] sm:text-[11.5px] font-sans font-medium tracking-[0.2em] uppercase text-[#43574D]">
                 Therapy for Adults in Santa Monica &amp; Across California
               </span>
             </div>
 
             {/* Main Editorial Headline */}
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-[3.75rem] text-[#252824] leading-[1.12] tracking-tight mb-5 md:mb-6">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-[3.75rem] text-[#252824] leading-[1.14] font-normal tracking-normal mb-5 md:mb-6">
               Feel grounded again, even when life feels like{" "}
               <span className="italic font-normal text-[#43574D]">
                 too much.
@@ -93,7 +93,7 @@ export default function Hero({ onOpenConsultation }: HeroProps) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-3.5 left-4 right-4 text-white drop-shadow-xs">
-                  <span className="font-serif text-sm block font-medium">Dr. Maya Reynolds, PsyD</span>
+                  <span className="font-serif text-sm block font-normal">Dr. Maya Reynolds, PsyD</span>
                   <span className="text-[10px] tracking-wider uppercase opacity-90">Santa Monica &amp; Telehealth</span>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function Hero({ onOpenConsultation }: HeroProps) {
               {/* Subtle Editorial Tag */}
               <div className="absolute -bottom-3 right-4 z-20 flex items-center gap-2 bg-[#FAF8F5]/95 backdrop-blur-md px-3.5 py-2 rounded-xl border border-[#DDD8CE] shadow-sm">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#43574D]" />
-                <span className="text-[10px] font-sans font-semibold tracking-[0.14em] uppercase text-[#252824]">
+                <span className="text-[10px] font-sans font-medium tracking-[0.16em] uppercase text-[#252824]">
                   In-Person &amp; Telehealth
                 </span>
               </div>
