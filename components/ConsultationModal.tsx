@@ -258,7 +258,7 @@ export default function ConsultationModal({
                   Thank you, {formData.name || "friend"}.
                 </h3>
                 <p className="text-xs sm:text-sm text-[#4A4F48] max-w-sm mx-auto leading-relaxed">
-                  Your inquiry has been received. Dr. Maya Reynolds will review your notes and reach out directly to schedule your initial consultation.
+                  Your inquiry has been received. I will review your notes and reach out directly to schedule your initial consultation.
                 </p>
                 <div className="pt-4">
                   <button

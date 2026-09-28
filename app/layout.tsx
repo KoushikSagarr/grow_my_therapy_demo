@@ -18,7 +18,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.drmayareynolds.com"),
+  metadataBase: new URL("https://growmytherapydemo.vercel.app/"),
   title: "Dr. Maya Reynolds, PsyD | Anxiety & Trauma Therapist in Santa Monica",
   description:
     "Dr. Maya Reynolds, PsyD offers warm, collaborative therapy for adults in Santa Monica and secure telehealth throughout California, with a focus on anxiety, trauma, burnout, perfectionism, and emotional overwhelm.",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Dr. Maya Reynolds, PsyD | Anxiety & Trauma Therapist in Santa Monica",
     description:
       "Warm, grounded, and collaborative therapy for thoughtful adults in Santa Monica and telehealth across California.",
-    url: "https://www.drmayareynolds.com",
+    url: "https://growmytherapydemo.vercel.app/",
     siteName: "Dr. Maya Reynolds, PsyD - Santa Monica Therapy",
     images: [
       {

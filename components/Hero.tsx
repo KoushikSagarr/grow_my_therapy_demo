@@ -40,7 +40,7 @@ export default function Hero({ onOpenConsultation }: HeroProps) {
 
             {/* Supporting Copy */}
             <p className="font-sans text-sm sm:text-base md:text-lg text-[#4A4F48] leading-relaxed max-w-xl mb-7 md:mb-9 font-normal">
-              You can be thoughtful, capable, and deeply self-aware—and still feel exhausted, anxious, or stuck. Dr. Maya Reynolds offers warm, collaborative therapy for adults navigating anxiety, trauma, burnout, and the pressure to keep going.
+              You can be thoughtful, capable, and deeply self-aware—and still feel exhausted, anxious, or stuck. I offer warm, collaborative therapy for adults navigating anxiety, trauma, burnout, and the pressure to keep going.
             </p>
 
             {/* CTA Group */}

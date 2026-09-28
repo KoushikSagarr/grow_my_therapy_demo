@@ -81,7 +81,7 @@ export default function FaqsPage() {
                 </span>
               </h1>
               <p className="text-sm sm:text-base text-[#4A4F48] leading-relaxed max-w-md mb-8">
-                Here is helpful information on what to expect when beginning therapy with Dr. Maya Reynolds.
+                Here is helpful information on what to expect when beginning therapy with me.
               </p>
 
               <div className="p-6 rounded-2xl bg-[#FAF8F5] border border-[#DDD8CE] max-w-sm space-y-3">
